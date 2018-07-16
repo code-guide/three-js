@@ -1,9 +1,9 @@
 import { CheckerPlugin } from 'awesome-typescript-loader';
 import * as HtmlPlugin from 'html-webpack-plugin';
 import * as path from 'path';
+import { PORT } from 'src/config';
 import * as webpack from 'webpack';
 import { Configuration } from 'webpack-dev-server';
-import { PORT } from './src/config';
 
 function Root(...paths: string[]) {
 	return path.join(__dirname, ...paths);
